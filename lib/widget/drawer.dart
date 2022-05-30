@@ -182,6 +182,8 @@ class DrawerWidget extends StatelessWidget {
   }
 
   selectedItem(BuildContext context, int index) {
+    Navigator.of(context).pop();
+
     switch (index){
       case 0:
         Navigator.of(context).push(MaterialPageRoute(
